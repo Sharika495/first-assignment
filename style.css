@@ -31,7 +31,7 @@ ul li a {
     text-decoration: none;
 } */
 
-.nav-ul{
+.nav-ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -39,7 +39,7 @@ ul li a {
     gap: 15px;
 }
 
-.nav-ul .nav-li a{
+.nav-ul .nav-li a {
     text-decoration: none;
 }
 
@@ -163,10 +163,10 @@ ul li a {
 
 
 /* speaker-container er bhetore combined image and info ache */
-.speaker-container{
+.speaker-container {
     display: grid;
     /* border: 1px solid gray; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: 40px;
 }
@@ -187,7 +187,7 @@ ul li a {
     align-items: center; */
 }
 
-.speaker-card img{
+.speaker-card img {
     width: 100%;
     height: 260px;
     object-fit: cover;
@@ -195,35 +195,35 @@ ul li a {
 }
 
 
-.speaker-info{
+.speaker-info {
     padding: 18px;
 }
 
-.speaker-info h5{
+.speaker-info h5 {
     color: blue;
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 8px;
 }
 
-.speaker-info h3{
+.speaker-info h3 {
     margin-bottom: 6px;
 }
 
-.speaker-info p{
+.speaker-info p {
     color: gray;
 }
 
 /* speaker content end */
 
 /* secure container start */
-.secure-container{
+.secure-container {
     padding: 30px 70px;
-    margin: 30px 80px;
+    margin: 40px 80px;
     background-color: rgb(232, 235, 238);
 }
 
-.secure-container h1{
+.secure-container h1 {
     margin-top: 5px;
     text-align: center;
     font-size: 45px;
@@ -231,29 +231,50 @@ ul li a {
     margin-bottom: 10px;
 }
 
-.secure-container > p{
+.secure-container>p {
     text-align: center;
 }
 
-.secure-box-container{
+.secure-box-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
 }
 
-.box-card{
+.box-card {
     width: 300px;
-    padding: 20px;
+    padding: 40px;
     background: white;
 
     border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid rgb(163, 245, 11);
+    /* overflow: hidden; */
+    border: 1px solid rgb(218, 222, 210);
     /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
 }
 
-.upper-box h5{
+.box-card-premium {
+    width: 300px;
+    padding: 40px;
+    background: rgb(46, 46, 46);
+
+    border-radius: 10px;
+    /* overflow: hidden; */
+    border: 1px solid rgb(236, 239, 231);
+    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.box-card-premium .upper-box h5{
     font-size: 10px;
+    color: rgb(108, 174, 228);
+}
+
+.upper-box h5 {
+    font-size: 11px;
     color: rgb(109, 109, 109);
 }
 
@@ -262,36 +283,109 @@ ul li a {
     font-weight: bold;
 } */
 
-#price{
+#price {
     font-size: 45px;
     font-weight: bold;
 }
 
-#person{
+#person {
     font-size: 12px;
-    color: gray;;
+    color: gray;
+    ;
+    margin-bottom: 10px;
 }
 
-hr{
+hr {
     border: none;
     border-top: 1px solid gray;
-    margin: 10px;
+    /* margin: 10px; */
+    margin-bottom: 10px;
 }
 
 
-.card-ul{
+.card-ul {
     /* align-items: center;
     justify-content: center;
     text-align: center; */
     /* margin: 20px 0; */
-    padding: 40px;
+    /* padding: 40px; */
+    padding-left: 20px;
+    margin-top: 20px;
+
+
+}
+
+.carl-li {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.common-btn-second {
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 18px;
+    color: rgb(17, 58, 221);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 350px;
+    border: 1px solid blue;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+.common-btn-third {
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 18px;
+    color: rgb(67, 66, 66);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 350px;
+    border: 1px solid rgb(70, 69, 69);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.common-btn-premium {
+    background-color: rgb(22, 22, 227);
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(235, 237, 242);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 350px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+
+.lower-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.lower-box button{
+    margin-top: auto;
+    align-self: center;
     
-
-
 }
+/* secure section end */
 
-.card-li{
-    margin-bottom: 12px;
-    padding: 10px;
-}
+
+
 
