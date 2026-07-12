@@ -176,6 +176,12 @@ ul li a{
     align-items: center;
 }
 
+
+.banner-card button{
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+}
 .img-info-duitai{
     display: grid;
     margin-top: 60px;
