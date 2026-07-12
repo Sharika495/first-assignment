@@ -1,37 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 2px;
 }
 
-.container{
+/* .container{
     max-width: 1200px;
     margin: auto;
-}
-header{
+} */
+header {
     background-color: whitesmoke;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 12px 0px;
+    padding: 8px 0px;
+    background-color: rgb(233, 242, 250);
 }
 
-ul{
-    display:flex;
+ul {
+    display: flex;
     justify-content: space-around;
     list-style: none;
     align-items: center;
     gap: 15px;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
 }
 
-.common-btn{
+.common-btn {
     background-color: blue;
-    padding: 6px 15px ;
+    padding: 6px 15px;
     border-radius: 12px;
     font-weight: bold;
     font-size: 22px;
@@ -40,26 +42,9 @@ ul li a{
     cursor: pointer;
 }
 
-/* .hero-parent{ */
-    /* height: 1200px; */
-    /* display: flex;
-    position: relative; */
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
-    /* height: 600px; */
-    /* overflow: hidden; */
-    /* text-align: center; */
 
-/* } */
-/* .hero-parent img{
-    width: 100px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-} */
 
-.overlay{
+.overlay {
     background-color: black;
     /* position: center; */
     position: absolute;
@@ -75,72 +60,30 @@ ul li a{
     /* z-index: 1; */
 }
 
-/* .hero-container{ */
-    /* text-align: center; */
-  /* position: center; */
-  /* top: 100%; 
-  left: 100%; */
-  /* text-align: center; */
-  /* color: white; */
-  /* max-width: 1100px; */
-
-/* } */
 
 
-/* .gallery img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
-.box-1{
-    grid-area: one;
-}
-.box-2{
-    grid-area: two;
-}
-.box-3{
-    grid-area: three;
-}
-.box-4{
-    grid-area: four;
-} */
-
-/* .gallery{
-    display: grid;
-    margin-top: 20px;
-    gap: 12px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "one two"
-    "three four";
-} */
-
-
-.speakers{
+.speakers {
     width: 90%;
     max-width: 1200px;
     margin: 80px auto;
 }
 
-.speakers h2{
+.speakers h2 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
 
 }
 
-/* .speaker-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-    justify-content: center;
-} */
 
 
-.banner-card{
+
+.banner-card {
     position: relative;
 }
-.banner-card img{
+
+.banner-card img {
     max-width: 100%;
     height: 1000px;
     /* width: 100%;
@@ -149,26 +92,31 @@ ul li a{
 
 }
 
-.banner-text{
+.banner-text {
     position: absolute;
     top: 20%;
     left: 20%;
     right: 20%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 
     background: black;
     color: white;
+    font-size: 100;
     align-items: center;
     text-align: center;
     padding: 20px 40px;
     display: inline-block;
 }
 
-.banner-text h1{
+.banner-text p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text h1 {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -177,42 +125,82 @@ ul li a{
 }
 
 
-.banner-card button{
+.banner-card button {
     position: absolute;
-    bottom: 30px;
+    bottom: 35px;
     left: 45%;
 }
-.img-info-duitai{
-    display: grid;
-    margin-top: 60px;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    justify-content: center;
-}
-/* 
-.card img{
-    width: 150%;
-    height: 250px;
+
+
+/* Speaker content start */
+
+.container {
+    padding: 30px 70px;
+    margin: 30px 80px;
+    background-color: rgb(232, 235, 238);
 }
 
-.card-info{
-    padding: 20px;
-} */
+.container h1 {
+    /* top: 150px; */
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    /* align-items: center; */
+}
 
-.img-info-duitai{
-    /* top: 1000px; */
+.speaker-container{
     display: grid;
+    /* border: 1px solid gray; */
     grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+
+.speaker-card {
+
+    /* margin: 5px; */
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
     border: 1px solid gray;
-    margin: 25px;
-    width: 200px;
+    /* grid-template-columns: repeat(2,150px); */
+    /* grid-gap: 10px;
+    justify-content: space-evenly;
+    align-items: center; */
 }
 
-.img-info-duitai .speaker-info{
-    padding: 10px;
-}
-
-.img-info-duitai img{
+.speaker-card img{
     width: 100%;
-    height: auto;
+    height: 260px;
+    object-fit: cover;
+    display: block;
 }
+
+
+.speaker-info{
+    padding: 18px;
+}
+
+.speaker-info h5{
+    color: blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.speaker-info h3{
+    margin-bottom: 6px;
+}
+
+.speaker-info p{
+    color: gray;
+}
+
+/* speaker content end */
+
+
+
