@@ -19,7 +19,7 @@ nav {
     background-color: rgb(233, 242, 250);
 }
 
-ul {
+/* ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -28,6 +28,18 @@ ul {
 }
 
 ul li a {
+    text-decoration: none;
+} */
+
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-ul .nav-li a{
     text-decoration: none;
 }
 
@@ -226,14 +238,18 @@ ul li a {
 .secure-box-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    
 }
 
 .box-card{
-    width: 600px;
+    width: 300px;
+    padding: 20px;
     background: white;
+
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid gray;
+    border: 1px solid rgb(163, 245, 11);
+    /* gap: 10px; */
 }
 
 .upper-box h5{
@@ -263,17 +279,19 @@ hr{
 }
 
 
-.lower-box .card-ul{
+.card-ul{
     /* align-items: center;
     justify-content: center;
     text-align: center; */
-    margin: 20px 0;
-    padding-left: 20px;
+    /* margin: 20px 0; */
+    padding: 40px;
+    
 
 
 }
 
-.lower-box .card-li{
+.card-li{
     margin-bottom: 12px;
+    padding: 10px;
 }
 
