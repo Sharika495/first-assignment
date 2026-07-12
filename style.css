@@ -105,14 +105,14 @@ ul li a{
     grid-area: four;
 } */
 
-.gallery{
+/* .gallery{
     display: grid;
     margin-top: 20px;
     gap: 12px;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: "one two"
     "three four";
-}
+} */
 
 
 .speakers{
@@ -144,7 +144,7 @@ ul li a{
 }
 
 
-
+/* 
 .card img{
     width: 150%;
     height: 250px;
@@ -152,4 +152,22 @@ ul li a{
 
 .card-info{
     padding: 20px;
+} */
+
+.img-info-duitai{
+    /* top: 1000px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 1px solid gray;
+    margin: 25px;
+    width: 200px;
+}
+
+.img-info-duitai .speaker-info{
+    padding: 10px;
+}
+
+.img-info-duitai img{
+    width: 100%;
+    height: auto;
 }
