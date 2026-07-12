@@ -388,4 +388,75 @@ hr {
 
 
 
+/* Conference Schedule Start */
+.conference-container{
+    padding: 30px 70px;
+    margin: 30px 70px;
+    background-color: rgb(232, 238, 238);
+}
+
+.conference-container h1{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(88, 87, 87);
+}
+
+.conference-container p{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+
+.tracks-ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.tracks-ul .tracks-li a{
+    text-decoration: none;
+}
+
+.common-btn-normal{
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 13px;
+    color: rgb(67, 66, 66);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 90px;
+    border: 1px solid rgb(70, 69, 69);
+}
+.common-btn-normal-lenthy{
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 13px;
+    color: rgb(67, 66, 66);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 150px;
+    border: 1px solid rgb(70, 69, 69);
+}
+
+.conference-box-container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.conference-box{
+    background-color: rgb(159, 240, 240);
+    height: 50px;
+    width: auto;
+}
 
