@@ -1,0 +1,1 @@
+I am learning basic html and css. Give me a layout or design idea so that i can code the last page of my website. The website is about DEVCONF 2026
